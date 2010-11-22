@@ -13,7 +13,7 @@ or inside vim
 Modes
 -
 
-[![](http://blog.interlinked.org/static/images/modes.png)](http://blog.interlinked.org/tutorials/vim_tutorial.html)
+[![](modes.png)](http://blog.interlinked.org/tutorials/vim_tutorial.html)
 
 ### undo `u`
 
