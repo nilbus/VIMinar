@@ -1,0 +1,50 @@
+Basics
+=====
+
+Open a file
+-
+    vim [filename]
+
+or inside vim
+
+    :e [filename]
+    :edit [filename]
+
+Modes
+-
+
+[![](http://blog.interlinked.org/static/images/modes.png)](http://blog.interlinked.org/tutorials/vim_tutorial.html)
+
+### undo `u`
+
+### redo `<ctrl>r`
+
+### search
+    /regex
+    /\(TODO\|FIXME\)
+    /\v(TODO|FIXME)
+    /todo/i
+
+see `:help regex` and `:help magic`
+
+### search & replace
+    %s/old_name/new_name/g
+
+### copy paste
+`y<motion>` yank (copy)
+`d<motion>` delete (cut)
+`yy` yank a line
+`5yy` yank 5 lines
+`dd` delete a line
+`dG` delete to the end of the line
+`P` paste before the cursor
+`p` paste after the cursor
+
+### save & quit
+    :w
+    :write
+    :q
+    :quit
+    :wq
+    ZZ
+
