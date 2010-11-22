@@ -32,12 +32,19 @@ see `:help regex` and `:help magic`
 
 ### copy paste
 `y<motion>` yank (copy)
+
 `d<motion>` delete (cut)
+
 `yy` yank a line
+
 `5yy` yank 5 lines
+
 `dd` delete a line
+
 `dG` delete to the end of the line
+
 `P` paste before the cursor
+
 `p` paste after the cursor
 
 ### save & quit

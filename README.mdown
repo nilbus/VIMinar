@@ -1,4 +1,4 @@
 VIMinar
 =======
 
-
+This project cointains accompanying material for nilbus' seminar on learning the VIM text editor.
