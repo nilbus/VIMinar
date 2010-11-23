@@ -1,4 +1,55 @@
-VIMinar
-=======
+Basics
+======
 
-This project cointains accompanying material for nilbus' seminar on learning the VIM text editor.
+Open a file
+-
+    vim [filename]
+
+or inside vim
+
+    :e [filename]
+    :edit [filename]
+
+Modes
+-
+
+[![](../../raw/master/modes.png)](http://blog.interlinked.org/tutorials/vim_tutorial.html)
+
+### undo `u`
+
+### redo `<ctrl>r`
+
+### search
+    /regex
+    /\(TODO\|FIXME\)
+    /\v(TODO|FIXME)
+    /todo/i
+
+see `:help regex` and `:help magic`
+
+### search & replace
+    %s/old_name/new_name/g
+
+### copy paste
+`y<motion>` yank (copy)
+
+`d<motion>` delete (cut)
+
+`yy` yank a line
+
+`dd` delete a line
+
+`5dd` delete 5 lines
+
+`P` paste before the cursor
+
+`p` paste after the cursor
+
+### save & quit
+    :w
+    :write
+    :q
+    :quit
+    :wq
+    ZZ
+
