@@ -72,6 +72,10 @@ Single-line Movement
 
 `B` **B**ack a word (space)
 
+`e` **E**nd of word (non-alpha)
+
+`E` **E**nd of word (space)
+
 `^` Home (1st character on line)
 
 `0` Home (beginning of line)
@@ -94,6 +98,9 @@ Single-line Movement
 
 `,` Previous t or f match
 
+`<number><command>` Repeat any movement or edit number times
+
+
 The new arrow keys
 ------------------
 
@@ -104,6 +111,7 @@ The new arrow keys
 `h` left
 
 `l` right
+
 
 Moving to other lines
 ---------------------
@@ -148,7 +156,7 @@ Editing
 
 `D` **D**elete to the end of the line
 
-`c` **C**change to wherever you move next (delete + insert)
+`c<motion>` **C**change to wherever you move next (delete + insert)
 
 `C` **C**change to the end of the line
 
@@ -160,9 +168,10 @@ Editing
 
 `S` **S**wap the current line (cc + insert)
 
-`xp` transpose teh-like typo (delete and paste)
+`xp` transpose teh-like typo (delete and paste-after)
 
 `.` Repeat the last edit
+
 
 Scrolling
 ---------
@@ -189,26 +198,68 @@ Scrolling
 Window Basics
 -------------
 
+`^W n` **N**ew window
+
+`^W s` **S**plit window
+
+`^W k` or `^W <up>` Move cursor up a window
+
+`^W j` or `^W <down>` Move cursor down a window
+
+`^W c` or `:q` **C**close window
+
+`:help ^W`
+
+
 Buffers
 -------
+
+`:buffers` buffer list
+
+`:b partOfFilename` switch to buffer (tab-completable)
+
 
 Spell Checking
 --------------
 
 `:set spell`
+`:help spell`
+
 
 Macros
 ------
 
-`q`
+`qa` start recording macro a. Can use any letter
+
+`q` stop recording
+
+`@a` replay macro a
+
+`qA` append to macro a
+
+Caveat: `u` undo during recording won't act the same when played back, because playback acts as a single undo action. Don't use undo when recording.
 
 Examples:
 
 * adding --- to markdown
 * restructuring html tables
 
+
 Indentation
 -----------
+
+`==` Fix indentation on current line
+
+`>>` Indent current line
+
+`5>>` Indent 5 lines
+
+`>>` Indent current line
+
+`:set autoindent` or `:set ai`
+
+`:set cindent`
+
 
 Other neat tricks
 =================
