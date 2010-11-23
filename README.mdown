@@ -4,7 +4,9 @@ Basics
 Open a file
 -----------
 
-    vim [filename]
+    vim [filename/directory]
+.
+    vim filename +123
 
 or inside vim
 
@@ -218,6 +220,12 @@ Buffers
 `:buffers` buffer list
 
 `:b partOfFilename` switch to buffer (tab-completable)
+
+Opening a ton of files for use with buffers:
+
+    vi $(find . -type f)
+
+    vi * $(find rails_app/app -type f)
 
 ### If you started vim with several files on the command line:
 
