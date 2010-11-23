@@ -14,14 +14,14 @@ or inside vim
 Modes
 -----
 
-[![](../../raw/master/modes.png)](http://blog.interlinked.org/tutorials/vim_tutorial.html)
+[![](/nilbus/VIMinar/raw/master/modes.png)](http://blog.interlinked.org/tutorials/vim_tutorial.html)
 
 Essentials
 ----------
 
-### undo `u`
+### `u` **u**ndo
 
-### redo `<ctrl>r`
+### `<ctrl>r` **r**edo
 
 ### search
     /regex
@@ -32,22 +32,22 @@ Essentials
 see `:help regex` and `:help magic`
 
 ### search & replace
-    %s/old_name/new_name/g
+    :%s/old/new/g
 
 ### copy paste
-`y<motion>` yank (copy)
+`y<motion>` **y**ank (copy)
 
-`d<motion>` delete (cut)
+`d<motion>` **d**elete (cut)
 
-`yy` yank a line
+`yy` **y**ank a line
 
-`dd` delete a line
+`dd` **d**elete a line
 
-`5dd` delete 5 lines
+`5dd` **d**elete 5 lines
 
-`P` paste before the cursor
+`P` **p**aste before the cursor
 
-`p` paste after the cursor
+`p` **p**aste after the cursor
 
 ### save & quit
     :w
@@ -60,23 +60,109 @@ see `:help regex` and `:help magic`
 Efficient Editing
 =================
 
-Movement
---------
+Single-line Movement
+--------------------
 
-wWbB^$0<enter>-tTfFHML:100%
+`w` Forward a **w**ord (non-alpha)
+
+`W` Forward a **w**ord (space)
+
+`b` **B**ack a word (non-alpha)
+
+`B` **B**ack a word (space)
+
+`^` Home (1st character on line)
+
+`0` Home (beginning of line)
+
+`$` End (end of line)
+
+`<enter>` Down + Home (1st character)
+
+`-` Up + Home (1st character)
+
+`t` Go up **t**o the character you type next
+
+`T` Go up **t**o the character you type next, backward
+
+`f` Go **t**o the character you type next
+
+`F` Go **t**o the character you type next, backward
+
+`;` Next t or f match
+
+`,` Previous t or f match
+
+The new arrow keys
+------------------
+
+`j` up
+
+`k` down
+
+`h` left
+
+`l` right
+
+Moving to other lines
+---------------------
+
+`H` **H**ighest line on screen
+
+`M` **M**edium line on screen
+
+`L` **L**owest line on screen
+
+`:100` Jump to line 100
+
+`*` Search for the word under the cursor (forward)
+
+`#` Search for the word under the cursor (backward)
+
 
 Editing
 -------
 
-aAiI
-oOrRJ
-dDcCsS
-.
+`a`
+`A`
+`i`
+`I`
+
+`o`
+`O`
+`r`
+`R`
+`J`
+
+`d`
+`D`
+`c`
+`C`
+`s`
+`S`
+
+`x` Delete key
+
+`X` Backspace key
+
+`xp` transpose
+
+`.` Repeat the last edit
 
 Scrolling
 ---------
 
-^E^Y^F^B^U^Dz<enter>z-zz
+^E
+^Y
+^F
+^B
+^U
+^D
+z
+<enter>
+z-
+zz
+
 
 Windows
 -------
@@ -91,6 +177,7 @@ Macros
 ------
 
 Examples:
+
 * adding --- to markdown
 * restructuring html tables
 
