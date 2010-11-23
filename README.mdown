@@ -267,7 +267,7 @@ Other neat tricks
 Configuration
 -------------
 
-My [~/.vimrc](.vimrc)
+My [~/.vimrc](/nilbus/VIMinar/.vimrc)
 
 Set inside the editor with `:set foo=bar`
 
