@@ -51,10 +51,11 @@ see `:help regex` and `:help magic`
 `p` **p**aste (after cursor)
 
 ### save & quit
-    :w
     :write
-    :q
+    :w
     :quit
+    :q
+    :q!
     :wq
     ZZ
 
@@ -217,6 +218,14 @@ Buffers
 `:buffers` buffer list
 
 `:b partOfFilename` switch to buffer (tab-completable)
+
+### If you started vim with several files on the command line:
+
+    vim src/*
+
+`:next` or `:n` next file
+
+`:prev` or `:N` next file
 
 
 Spell Checking
