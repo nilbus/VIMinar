@@ -261,13 +261,13 @@ Indentation
 `:set cindent`
 
 
-Other neat tricks
-=================
+Other Stuff
+===========
 
 Configuration
 -------------
 
-My [~/.vimrc](/nilbus/VIMinar/.vimrc)
+My [~/.vimrc](/nilbus/VIMinar/raw/master/.vimrc)
 
 Set inside the editor with `:set foo=bar`
 
