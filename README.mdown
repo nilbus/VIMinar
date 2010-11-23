@@ -2,7 +2,8 @@ Basics
 ======
 
 Open a file
--
+-----------
+
     vim [filename]
 
 or inside vim
@@ -11,9 +12,12 @@ or inside vim
     :edit [filename]
 
 Modes
--
+-----
 
 [![](../../raw/master/modes.png)](http://blog.interlinked.org/tutorials/vim_tutorial.html)
+
+Essentials
+----------
 
 ### undo `u`
 
@@ -52,4 +56,73 @@ see `:help regex` and `:help magic`
     :quit
     :wq
     ZZ
+
+Efficient Editing
+=================
+
+Movement
+--------
+
+wWbB^$0<enter>-tTfFHML:100%
+
+Editing
+-------
+
+aAiI
+oOrRJ
+dDcCsS
+.
+
+Scrolling
+---------
+
+^E^Y^F^B^U^Dz<enter>z-zz
+
+Windows
+-------
+
+Buffers
+-------
+
+Spell Checking
+--------------
+
+Macros
+------
+
+Examples:
+* adding --- to markdown
+* restructuring html tables
+
+Indentation
+-----------
+
+Other neat tricks
+=================
+
+Configuration
+-------------
+
+My [~/.vimrc](.vimrc)
+
+Set inside the editor with `:set foo=bar`
+
+Ex:
+    :set tabstop=4 # make tabs 4 characters wide
+    :set ts=4      # make tabs 4 characters wide
+    :set paste     # don't autoindent
+    :set paste!    # same as :set nopaste
+
+Shell commands
+--------------
+
+!rm oldfile
+:w !sudo tee %
+:!javac %
+
+Help
+----
+
+* `:help`
+* [Vim Introduction and Tutorial](http://blog.interlinked.org/tutorials/vim_tutorial.html)
 
