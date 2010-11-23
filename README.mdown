@@ -24,7 +24,8 @@ Essentials
 ### `<ctrl>r` **r**edo
 
 ### search
-    /regex
+    /regex search
+    ?search backwards
     /\(TODO\|FIXME\)
     /\v(TODO|FIXME)
     /todo/i
@@ -45,9 +46,9 @@ see `:help regex` and `:help magic`
 
 `5dd` **d**elete 5 lines
 
-`P` **p**aste before the cursor
+`P` **p**aste (before cursor)
 
-`p` **p**aste after the cursor
+`p` **p**aste (after cursor)
 
 ### save & quit
     :w
@@ -81,13 +82,13 @@ Single-line Movement
 
 `-` Up + Home (1st character)
 
-`t` Go up **t**o the character you type next
+`t☐` Go up **t**o the character you type next, ex: `t(` **t**o the next (
 
-`T` Go up **t**o the character you type next, backward
+`T☐` Go up **t**o the character you type next, backward
 
-`f` Go **t**o the character you type next
+`f☐` **F**ind the character you type next
 
-`F` Go **t**o the character you type next, backward
+`F☐` **F**ind the character you type next, backward
 
 `;` Next t or f match
 
@@ -123,49 +124,70 @@ Moving to other lines
 Editing
 -------
 
-`a`
-`A`
-`i`
-`I`
+`i` **I**nsert mode (before cursor)
 
-`o`
-`O`
-`r`
-`R`
-`J`
+`I` **I**nsert mode (beginning of line)
 
-`d`
-`D`
-`c`
-`C`
-`s`
-`S`
+`a` **A**ppend (insert after cursor)
+
+`A` **A**ppend (insert after cursor)
+
+`o` **O**pen a new line (before cursor)
+
+`O` **O**pen a new line (after cursor)
+
+`r☐` **R**eplace the character under the cursor with ☐
+
+`R` **R**eplace in insert mode - type over characters
+
+`J` **J**oin lines with a space
+
+`gJ` **J**oin lines
+
+`d<motion>` **D**elete (cut) to wherever you move next
+
+`D` **D**elete to the end of the line
+
+`c` **C**change to wherever you move next (delete + insert)
+
+`C` **C**change to the end of the line
 
 `x` Delete key
 
 `X` Backspace key
 
-`xp` transpose
+`s` **S**wap the current character (x + insert)
+
+`S` **S**wap the current line (cc + insert)
+
+`xp` transpose teh-like typo (delete and paste)
 
 `.` Repeat the last edit
 
 Scrolling
 ---------
 
-^E
-^Y
-^F
-^B
-^U
-^D
-z
-<enter>
-z-
-zz
+`^E` Scroll down
+
+`^Y` Scroll up
+
+`^F` **F**orward a page (page down)
+
+`^B` **B**ack a page (page up)
+
+`^U` **U**p 1/2 page
+
+`^D` **D**own 1/2 page
+
+`z<enter>` Scroll so cursor is at top of screen
+
+`zz` or `z.` Scroll so cursor is at middle of screen
+
+`z-` Scroll so cursor is at bottom of screen
 
 
-Windows
--------
+Window Basics
+-------------
 
 Buffers
 -------
@@ -173,8 +195,12 @@ Buffers
 Spell Checking
 --------------
 
+`:set spell`
+
 Macros
 ------
+
+`q`
 
 Examples:
 
