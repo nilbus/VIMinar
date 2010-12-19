@@ -5,7 +5,7 @@ Open a file
 -----------
 
     vim [filename/directory]
-.
+
     vim filename +123
 
 or inside vim
@@ -107,9 +107,9 @@ Single-line Movement
 The new arrow keys
 ------------------
 
-`j` up
+`j` down
 
-`k` down
+`k` up
 
 `h` left
 
@@ -209,7 +209,7 @@ Window Basics
 
 `^W j` or `^W <down>` Move cursor down a window
 
-`^W c` or `:q` **C**close window
+`^W c` or `:q` **C**lose window
 
 `:help ^W`
 
@@ -286,7 +286,7 @@ Configuration
 
 My [~/.vimrc](/nilbus/VIMinar/raw/master/.vimrc)
 
-Set inside the editor with `:set foo=bar`
+Set config values in vim with `:set foo=bar`
 
 Ex:
     :set tabstop=4 # make tabs 4 characters wide
@@ -297,9 +297,9 @@ Ex:
 Shell commands
 --------------
 
-!rm oldfile
-:w !sudo tee %
-:!javac %
+    !rm oldfile
+    :w !sudo tee %
+    :!javac %
 
 Help
 ----
